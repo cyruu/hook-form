@@ -2,8 +2,10 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 function App() {
+  // state variables
   const [showPassword, setshowPassword] = useState(false);
   const [showconfirmPassword, setshowconfirmPassword] = useState(false);
+  // react hook form
   const { register, handleSubmit, formState, watch } = useForm();
   const { errors } = formState;
 
